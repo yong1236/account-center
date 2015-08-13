@@ -31,12 +31,12 @@
 				</bean>
 			</list>
 		</property>
-		<!-- <property name="defaultViews">
+		<property name="defaultViews">
 			<list>
 				<bean
 					class="org.springframework.web.servlet.view.json.MappingJackson2JsonView" />
 			</list>
-		</property> -->
+		</property>
 	</bean>
 
 </beans>
