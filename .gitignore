@@ -1,0 +1,10 @@
+/build/
+
+/.gradle/
+/.setting/
+/.classpath
+/.project
+/.springBeans
+/WebRoot/WEB-INF/classes/
+
+/.settings/
