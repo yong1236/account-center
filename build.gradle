@@ -1,3 +1,5 @@
+import java.lang.invoke.LambdaForm.Compiled;
+
 import org.gradle.plugins.ide.eclipse.model.Facet
 
 apply plugin: 'maven'
@@ -27,11 +29,15 @@ dependencies {
 	//compile "org.springframework:spring-context:${springVersion}"
 	compile "org.springframework:spring-webmvc:${springVersion}" //此时不用配spring-context依赖关系
 	compile "org.springframework:spring-test:${springVersion}"
+	compile "org.springframework:spring-orm:${springVersion}"	//ORM 对象关系映射
 	
 	compile "com.fasterxml.jackson.core:jackson-databind:2.6.1"
 	
 	//日志记录
 	compile 'log4j:log4j:1.2.14'
+	
+	compile "mysql:mysql-connector-java:5.1.35"	//mysql 驱动
+	compile "commons-dbcp:commons-dbcp:1.4"		//JDBC Pools, 另 c3p0
 	
 	providedCompile 'javax.servlet:servlet-api:2.5' // 编译期
 	providedRuntime 'javax.servlet:jstl:1.2'    // 运行时
